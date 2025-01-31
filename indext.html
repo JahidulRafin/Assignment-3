@@ -8,6 +8,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+
+    <style>
+        .sora-font {
+  font-family: "Sora", serif;
+}
+    </style>
+
     <!-- font awesome  -->
     <script src="https://kit.fontawesome.com/c9806ea584.js" crossorigin="anonymous"></script>
     <!-- tailwindcss. -->
@@ -25,7 +32,102 @@
       </script>
 
 </head>
-<body>
+<body class="sora-font">
+    <header>
+        <section class="pt-10 bg-gradient-to-b from-orange-50 to bg-orange-100">
+            <div class="flex justify-around place-items-center w-full ">
+                <div class="">
+                    <img src="c2-assets/logo-header.png" alt="">
+                    <!-- <img class="lg:hidden" src="c2-assets/logo-footer.png" alt=""> -->
+
+                </div>
+                <div class="hidden lg:grid grid-flow-col gap-4">
+                    <a href="Product">Product</a>
+                    <a href="Services">Services</a>
+                    <a href="Contact us">Contact us</a>
+
+                </div>
+                <div class="hidden lg:grid grid-flow-col gap-4 place-items-center" >
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <i class="fa-solid fa-cart-plus"></i>
+                    <button class="border border-green-600 py-3 px-5 rounded-xl">Login</button>
+                    <button class="bg-green-600 text-white px-5 py-3 rounded-xl">Register</button>
+
+                </div>
+                <div class="justify-around lg:hidden">
+                    <img src="c2-assets/logo-footer.png" alt="">
+                    <i class="fa-solid fa-bars text-green-600 l"></i>
+                </div>
+            </div>
+            <!-- hero section -->
+            <div class="text-center mt-14">
+                <div>
+                    <h1 class="text-2xl font-bold lg:text-5xl ">Freshness <span class="text-green-600">You Can <br>
+                        Count</span> On, Prices You’ll Love!</h1>
+                        <p class="text-gray-500 pt-8">Shop your daily essentials at unbeatable prices. From fresh produce to pantry <br> staples, we’ve got you covered every day!</p>
+                        
+                        
+                
+                </div>
+                <!-- hero img -->
+                <div class="mx-auto">
+                  <img src="c2-assets/hero-vegetables.png" alt="">
+                </div>
+
+            </div>
+
+        </section>
+
+    </header>
+    <main>
+          <!-- Service -->
+        <section class="max-w-screen-xl mx-auto px-8 lg:px-28 pt-20">
+            <div class="font-bold text-green-600 text-3xl pb-5">Services</div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 text-center">
+
+                <!--service card -->
+
+                <div class="rounded-lg shadow-md bg-orange-100 overflow-hidden">
+                    <img class="bg-stone-50 rounded-full mx-auto pt-4" src="c2-assets/service.png" alt="">
+                    <div>
+                        <h2 class="text-xl font-bold pt-3">24/7 Services </h2>
+                        <p class="pt-4 text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                    </div>
+                </div>
+
+                 <!--service card -->
+
+                 <div class="rounded-lg shadow-md bg-orange-100 overflow-hidden">
+                    <img class="bg-stone-50 pt-4 rounded-full mx-auto " src="c2-assets/delivery.png" alt="">
+                    <div>
+                        <h2 class="text-xl font-bold pt-3">Fast Delivery </h2>
+                        <p class="pt-4 pb-5 text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                    </div>
+                </div>
+                
+                 <!--service card -->
+
+                 <div class="rounded-lg shadow-md bg-orange-100 overflow-hidden">
+                    <img class="bg-stone-50 rounded-full mx-auto pt-4" src="c2-assets/healthy.png" alt="">
+                    <div>
+                        <h2 class="text-xl font-bold pt-3">Healthy Products </h2>
+                        <p class="pt-4 text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                    </div>
+                </div>
+                
+
+                
+    
+            </div>
+        </section>
+        
+        
+
+    </main>
+    <footer>
+
+    </footer>
     
 </body>
 </html>
