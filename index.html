@@ -38,7 +38,7 @@
     <header>
         <section class="pt-10 bg-gradient-to-b from-orange-50 to bg-orange-100">
             <div class="flex justify-around place-items-center w-full ">
-                <div class="">
+                <div class="hidden md:block">
                     <img src="c2-assets/logo-header.png" alt="">
                     <!-- <img class="lg:hidden" src="c2-assets/logo-footer.png" alt=""> -->
 
@@ -56,16 +56,21 @@
                     <button class="bg-green-600 text-white px-5 py-3 rounded-xl">Register</button>
 
                 </div>
-                <div class="justify-around lg:hidden">
-                    <img src="c2-assets/Group (1).png" alt="">
-                    <i class="fa-solid fa-bars text-green-600 l"></i>
-                </div>
+
+            </div>
+
+            <div class="flex justify-between items-center md:hidden px-3 border-b-2 border-green-400 py-3">
+                <img src="c2-assets/Group (1).png" alt="">
+                <i class="fa-solid fa-bars text-green-600"></i>
             </div>
             <!-- hero section -->
             <div class="text-center mt-14">
                 <div>
-                    <h1 class="text-2xl font-bold lg:text-5xl ">Freshness <span class="text-green-600">You Can <br>
-                            Count</span> On, Prices You’ll Love!</h1>
+                    <!-- <h1 class="text-2xl font-bold lg:text-5xl ">Freshness <span class="text-green-600">You Can <br>
+                            Count</span> On, Prices You’ll Love!</h1> -->
+                    <h1 class="text-2xl font-bold lg:text-5xl text-center animate-bounce">
+                        Freshness <span class="text-green-600">You Can <br> Count</span> On, Prices You’ll Love!
+                    </h1>
                     <p class="text-gray-500 pt-8">Shop your daily essentials at unbeatable prices. From fresh produce to
                         pantry <br> staples, we’ve got you covered every day!</p>
 
@@ -128,6 +133,20 @@
             </div>
         </section>
 
+        <!-- fish and meat -->
+        <section
+            class="max-w-screen-xl mx-auto bg-gradient-to-r from-green-500 to bg-green-300 rounded-lg md:flex md:justify-around mt-20 space-y-6 md:space-y-0">
+            <div class="text-white mt-24">
+                <h1 class="text-3xl md:text-7xl text-center md:text-left"><span class="font-extrabold">Meat &</span>
+                    Fish</h1>
+                <div class="flex justify-center items-center md:block"><button
+                        class="bg-green-200 px-7 py-3 rounded-xl text-red-400">Shop Now</button></div>
+            </div>
+            <div class="flex justify-center items-center md:block">
+                <img class="h-72 w-96 rounded-lg" src="fish and meat.jpg" alt="">
+            </div>
+        </section>
+
         <!-- Popular Products -->
 
         <section class=" lg:px-30 pt-20 mt-10 bg-orange-50">
@@ -136,8 +155,7 @@
             </div>
             <div class=" lg: max-w-screen-xl mx-auto px-8 mb-10 grid md:grid-cols-6 grid-cols-1 gap-4">
 
-                <div
-                    class="bg-gradient-to-br from-green-400 to bg-green-100 pl-4 rounded-lg col-span-2 my-5">
+                <div class="bg-gradient-to-br from-green-400 to bg-green-100 pl-4 rounded-lg col-span-2 my-5">
                     <div>
                         <h2 class="text-xl font-bold text-white mt-7">30% off</h2>
                         <p>Discover a world of treats ,toys, and essentials handpicked for</p>
@@ -259,8 +277,8 @@
             <div>
                 <h1 class="font-bold text-green-600 text-3xl pb-5 pt-10">Arrival & Offers</h1>
             </div>
-            <div class=" lg:grid grid-cols-5 gap-4">
-                <div class="bg-green-700 text-white rounded-xl mb-5 lg:col-span-3  flex gap-7">
+            <!-- <div class=" lg:grid grid-cols-5 gap-4">
+                <div class="bg-green-700 text-white rounded-xl mb-5 lg:col-span-3 flex gap-7">
                     <div class="pl-5">
                         <div class="pt-5 lg:pt-10">
                             <img src="c2-assets/dawat-logo.png" alt="">
@@ -279,8 +297,7 @@
                     </div>
 
                 </div>
-                <!-- 2nd  -->
-                <div class="bg-blue-700 text-white rounded-xl col-span-2 flex gap-4">
+                <div class="bg-blue-700 text-white rounded-xl col-span-2 flex gap-4 *:">
                     <div class="pl-4">
                         <div class="pt-3 lg:pt-5">
                             <img src="c2-assets/india-gate-logo.png" alt="">
@@ -300,6 +317,50 @@
 
                 </div>
 
+            </div> -->
+
+
+            <div class="lg:grid grid-cols-5 gap-4 mb-5">
+                <!-- First Card -->
+                <div
+                    class="bg-green-700 text-white rounded-xl mb-5 lg:col-span-3 flex gap-7 h-full min-h-[250px] items-stretch">
+                    <div class="pl-5 flex flex-col justify-between py-5">
+                        <div>
+                            <img src="c2-assets/dawat-logo.png" alt="Dawat Logo">
+                        </div>
+                        <div>
+                            <button class="bg-green-400 rounded-xl text-xl px-6 lg:px-10 py-3">
+                                Cook Exotic Dishes
+                            </button>
+                        </div>
+                        <div>
+                            <h1 class="text-xl lg:text-3xl">UP to <span class="font-bold">20% OFF</span></h1>
+                        </div>
+                    </div>
+                    <div class="mx-auto flex items-center">
+                        <img src="c2-assets/dawat-mock-up.png" class="h-full object-cover" alt="Dawat Mockup">
+                    </div>
+                </div>
+
+                <!-- Second Card -->
+                <div class="bg-blue-700 text-white rounded-xl col-span-2 flex gap-4 h-full min-h-[250px] items-stretch">
+                    <div class="pl-4 flex flex-col justify-between py-5">
+                        <div>
+                            <img src="c2-assets/india-gate-logo.png" alt="India Gate Logo">
+                        </div>
+                        <div>
+                            <button class="bg-blue-400 rounded-xl text-xs lg:px-8 py-3 md:text-xl">
+                                World’s No.1 Rice
+                            </button>
+                        </div>
+                        <div>
+                            <h1 class="text-xl lg:text-3xl">UP to <span class="font-bold">40% OFF</span></h1>
+                        </div>
+                    </div>
+                    <div class="mx-auto flex items-center">
+                        <img src="c2-assets/india-gate-mock-up.png" class="h-full object-cover" alt="India Gate Mockup">
+                    </div>
+                </div>
             </div>
 
         </section>
@@ -307,43 +368,48 @@
 
 
     </main>
-    <footer class="relative bg-black md:mt-60 mt-96">
-        <!-- Grocery  -->
-        <div class="md:max-w-screen-lg w-[80%] px-10 bg-orange-50 rounded-2xl md:flex absolute -top-[40%] md:bottom-1/2 left-[20px] md:left-[300px]">
-            <div>
-                <img class="" src="c2-assets/vegetable-busket.png" alt="">
-            </div>
-            <div class="pt-10">
-                <h3 class="text-xl font-semibold">Get Grocery News!</h3>
-                <br>
-                <p class="pt- text-gray-600">Exclusive training tips, ticks, product deals and more</p>
-                <br>
-                <input class="text-xs px-9 py-2 rounded-lg pt-6 justify-center w-full " placeholder="Enter email"
-                    type="Enter email">
-                <br>
-                <br>
-                <div class="flex justify-center items-center"><button class="bg-green-600 text-white px-5 py-3 rounded-xl">Subscribe</button></div>
-            </div>
-
+    <div class="relative z-50 md:max-w-screen-lg w-[80%] px-10 bg-orange-50 rounded-2xl md:flex mx-auto -mb-64 py-10">
+        <div>
+            <img class="" src="c2-assets/vegetable-busket.png" alt="">
+        </div>
+        <div class="pt-10">
+            <h3 class="text-xl font-semibold text-green-700 lg:text-2xl md:text-black">Get Grocery News!</h3>
+            <br>
+            <p class="pt- text-gray-600">Exclusive training tips, ticks, product deals and more</p>
+            <br>
+            <input class="text-xs px-9 py-2 rounded-lg pt-6 justify-center w-full " placeholder="Enter email"
+                type="Enter email">
+            <br>
+            <br>
+            <div class="flex justify-center items-center"><button
+                    class="bg-green-600 text-white px-5 py-3 rounded-xl">Subscribe</button></div>
         </div>
 
-        <!-- footer -->
-        <div class="pt-80 bg-green-500 md:flex justify-between text-white">
-            <div>
+    </div>
+
+
+    <footer class="">
+
+        <div class="pt-80 bg-green-500 md:flex justify-between text-white ">
+            <div class="pl-8">
                 <img src="c2-assets/logo-footer.png" alt="">
-                <p>Discover a world of treats, toys, and essentials handpicked for your furry friends</p>
+                <p class="text-xs">Discover a world of treats, toys, and <br> essentials handpicked for your furry <br>
+                    friends</p>
             </div>
-            <div>
+            <div class="pl-8 md:pl-0">
                 <a href="">Product</a>
+                <br>
                 <br>
                 <a href="">Services</a>
                 <br>
+                <br>
                 <a href="">Contact us</a>
             </div>
-            <div>
+            <br>
+            <div class="pl-8 md:pl-0">
                 <p>Follow Us</p>
-                <br>
-                <div class="md:flex gap-3">
+
+                <div class="flex md:flex gap-3">
                     <img src="c2-assets/Mask group.png" alt="">
                     <img src="c2-assets/Vector.png" alt="">
                     <img src="c2-assets/int.png" alt="">
